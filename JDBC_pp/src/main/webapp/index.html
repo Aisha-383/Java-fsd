@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
 </head>
 <body>
- <h2>Enter Product ID</h2>
+    <h2>Product Details Lookup</h2>
     <form action="ProductServlet" method="post">
-        <label for="productId">Product ID:</label>
+        <label for="productId">Enter Product ID:</label>
         <input type="text" id="productId" name="productId" required>
-        <br>
-        <input type="submit" value="Get Product Details">
+        <button type="submit">Get Product Details</button>
     </form>
 </body>
 </html>

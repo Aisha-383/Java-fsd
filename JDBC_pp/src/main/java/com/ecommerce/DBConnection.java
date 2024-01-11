@@ -1,17 +1,14 @@
-//package com.ecommerce;
-//import java.sql.*;
-//
-//public class DBConnection {	 
-//		public static Connection getConnection() {
-//			Connection con=null;
-//			try {
-//				con=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/shirts_db/product","root","root");
-//			}
-//			catch(Exception ex){
-//				con=null;
-//			}
-//			return con;
-//		}
-//	}
-//
-//
+package com.ecommerce;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConnection {
+    public static Connection getConnection() throws SQLException {
+        String url = "jdbc:mysql://127.0.0.1:3306/ecommerce";
+        String user = "your_username";
+        String password = "your_password";
+        return DriverManager.getConnection(url, user, password);
+    }
+}
+
